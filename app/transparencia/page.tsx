@@ -23,28 +23,40 @@ const ARCHIVO = "https://smapac.gob.mx/transparencia-web/"
 type Item = { title: string; icon: LucideIcon; url: string; external?: boolean; internal?: boolean }
 
 const items: Item[] = [
-  { title: "Obligaciones comunes de transparencia", icon: ClipboardCheck, url: ARCHIVO + "comunes2025.html" },
-  { title: "Información financiera (LGCG)", icon: Landmark, url: ARCHIVO + "inf_financiera.html" },
-  { title: "Avisos de privacidad", icon: ShieldCheck, url: ARCHIVO + "avisos_de_privacidad.html" },
+  {
+    title: "Obligaciones comunes de transparencia",
+    icon: ClipboardCheck,
+    url: "/transparencia/obligaciones-comunes",
+    internal: true,
+  },
+  { title: "Información financiera (LGCG)", icon: Landmark, url: "/transparencia/informacion-financiera", internal: true },
+  { title: "Avisos de privacidad", icon: ShieldCheck, url: "/transparencia/avisos-de-privacidad", internal: true },
   {
     title: "Índice de expedientes clasificados como reservados",
     icon: Lock,
-    url: ARCHIVO + "indice_expedientes_clasificados_reserv.html",
+    url: "/transparencia/indice-expedientes-reservados",
+    internal: true,
   },
   {
     title: "Informe semestral de solicitudes de información",
     icon: FileText,
-    url: ARCHIVO + "inf_sem_sol_informacion.html",
+    url: "/transparencia/informe-semestral-solicitudes",
+    internal: true,
   },
-  { title: "Informe anual de datos personales", icon: Users, url: ARCHIVO + "inf_anual_datos_personales.html" },
+  {
+    title: "Informe anual de datos personales",
+    icon: Users,
+    url: "/transparencia/informe-anual-datos-personales",
+    internal: true,
+  },
   {
     title: "SIPOT — Plataforma Nacional de Transparencia",
     icon: Globe,
     url: "https://www.plataformadetransparencia.org.mx/",
     external: true,
   },
-  { title: "Presupuesto de ingreso y egreso", icon: Coins, url: ARCHIVO + "presu_ing_e_egr_y_normas.html" },
-  { title: "Marco normativo y reglamento interno", icon: Scale, url: ARCHIVO + "reglamento.html" },
+  { title: "Presupuesto de ingreso y egreso", icon: Coins, url: "/transparencia/presupuesto", internal: true },
+  { title: "Marco normativo y reglamento interno", icon: Scale, url: "/transparencia/marco-normativo", internal: true },
   { title: "Directorio", icon: Contact, url: "/transparencia/directorio", internal: true },
 ]
 
