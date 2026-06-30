@@ -3,6 +3,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ArrowRight, CreditCard, Phone, Clock, Droplets, Waves, Sprout, CheckCircle } from "lucide-react"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
+import HeroCarousel from "@/components/hero-carousel"
 import Link from "next/link"
 
 export default function HomePage() {
@@ -10,42 +11,39 @@ export default function HomePage() {
     <div className="min-h-screen bg-white">
       <Navigation />
 
-      {/* Hero */}
-      <section className="relative overflow-hidden bg-gradient-to-br from-cyan-800 to-cyan-600 text-white">
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_20%_20%,white,transparent_40%)]" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 lg:py-28">
-          <div className="max-w-3xl">
-            <p className="text-amber-300 font-semibold tracking-wide uppercase text-sm mb-4">
-              Sistema Municipal de Agua Potable y Alcantarillado de Carmen
-            </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-black leading-tight mb-6">
-              Trabajamos para que no te falte el agua
-            </h1>
-            <p className="text-lg md:text-xl text-cyan-50/90 mb-8 max-w-2xl">
-              En el SMAPAC garantizamos el servicio de agua potable y alcantarillado en el municipio
-              de Carmen, con compromiso y calidad para todas las familias.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4">
-              <Link href="/pago">
-                <Button size="lg" className="bg-guinda-600 hover:bg-guinda-700 text-white px-8 py-4 text-lg">
-                  <CreditCard className="mr-2 h-5 w-5" />
-                  Paga tu recibo en línea
-                </Button>
-              </Link>
-              <Link href="/servicios">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-white text-white hover:bg-white hover:text-cyan-700 px-8 py-4 text-lg bg-transparent"
-                >
-                  Conoce nuestros servicios
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-            </div>
+      {/* Hero con carrusel */}
+      <HeroCarousel>
+        <div className="max-w-3xl">
+          <p className="text-amber-300 font-semibold tracking-wide uppercase text-sm mb-4 drop-shadow">
+            Sistema Municipal de Agua Potable y Alcantarillado de Carmen
+          </p>
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-black leading-tight mb-6 drop-shadow-md">
+            Trabajamos para que no te falte el agua
+          </h1>
+          <p className="text-lg md:text-xl text-cyan-50 mb-8 max-w-2xl drop-shadow">
+            En el SMAPAC garantizamos el servicio de agua potable y alcantarillado en el municipio
+            de Carmen, con compromiso y calidad para todas las familias.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Link href="/pago">
+              <Button size="lg" className="bg-guinda-600 hover:bg-guinda-700 text-white px-8 py-4 text-lg">
+                <CreditCard className="mr-2 h-5 w-5" />
+                Paga tu recibo en línea
+              </Button>
+            </Link>
+            <Link href="/servicios">
+              <Button
+                size="lg"
+                variant="outline"
+                className="border-white text-white hover:bg-white hover:text-cyan-700 px-8 py-4 text-lg bg-transparent"
+              >
+                Conoce nuestros servicios
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
-      </section>
+      </HeroCarousel>
 
       {/* ¿Qué es SMAPAC? */}
       <section className="py-20 bg-white">
