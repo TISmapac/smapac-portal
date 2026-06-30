@@ -55,9 +55,12 @@ const areas = [
   {
     area: "Área de Atención a Usuarios",
     icon: Users,
+    completa: true,
     tramites: [
       { nombre: "Baja Temporal", documentos: docsComunes },
       { nombre: "Reconexión por baja temporal", documentos: docsComunes },
+      { nombre: "Constancia de no adeudo", documentos: docsComunes },
+      { nombre: "Robo de medidor", documentos: docsComunes },
     ],
   },
 ]
@@ -169,9 +172,11 @@ export default function TramitesPage() {
                       </ul>
                     </div>
                   ))}
-                  <p className="text-sm text-gray-400 italic pt-2 border-t border-gray-100">
-                    Próximamente se agregarán más trámites de esta área.
-                  </p>
+                  {!a.completa && (
+                    <p className="text-sm text-gray-400 italic pt-2 border-t border-gray-100">
+                      Próximamente se agregarán más trámites de esta área.
+                    </p>
+                  )}
                 </CardContent>
               </Card>
             ))}

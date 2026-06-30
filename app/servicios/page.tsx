@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { Truck, Wrench, Droplets, Building2, AlertCircle, MapPin, Phone, Plus } from "lucide-react"
+import { Truck, Wrench, Droplets, Building2, AlertCircle, MapPin, Phone } from "lucide-react"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
 import PageHero from "@/components/page-hero"
@@ -134,26 +134,6 @@ export default function ServiciosPage() {
                       </li>
                     ))}
                   </ol>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-
-          {/* Más servicios próximamente */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
-            {[0, 1, 2].map((i) => (
-              <Card
-                key={i}
-                className="border-2 border-dashed border-cyan-200 bg-cyan-50/40 shadow-none h-full"
-              >
-                <CardContent className="pt-8 flex flex-col items-center justify-center text-center min-h-[200px]">
-                  <div className="w-14 h-14 rounded-full bg-white border-2 border-dashed border-cyan-300 flex items-center justify-center mb-4 text-cyan-400">
-                    <Plus className="h-7 w-7" />
-                  </div>
-                  <h3 className="font-serif font-bold text-lg text-gray-500 mb-2">Próximamente</h3>
-                  <p className="text-gray-400 text-sm">
-                    Estamos preparando más servicios para ti.
-                  </p>
                 </CardContent>
               </Card>
             ))}
