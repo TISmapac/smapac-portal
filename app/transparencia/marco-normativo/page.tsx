@@ -4,8 +4,9 @@ import ContactoTransparencia from "@/components/contacto-transparencia"
 
 const documentos = [
   {
-    title: "Reglamento Interno del SMAPAC",
-    href: "https://www.smapac.gob.mx/transparencia/2026/JURIDICO%202026/REGLAMENTO%20INTERIOR%2019022026.pdf",
+    title:
+      "Reglamento Interno de Organismo Operador Municipal denominado Sistema Municipal de Agua Potable y Alcantarillado de Carmen",
+    href: "https://www.smapac.gob.mx/transparencia/2026/JURIDICO%202026/REGLAMENTO%20INTERIOR%20%2019022026.pdf",
     meta: "PDF · 2026",
   },
   {

@@ -46,7 +46,7 @@ export default function AvisoDePrivacidadPage() {
                 </span>
               </div>
               <span className="text-sm text-gray-500">
-                <span className="font-semibold text-gray-700">Última modificación:</span> 02 de junio de 2022
+                <span className="font-semibold text-gray-700">Última modificación:</span> 29 de junio de 2026
               </span>
             </div>
 
@@ -66,18 +66,28 @@ export default function AvisoDePrivacidadPage() {
               <ul className={listCls}>
                 <li>Generar su registro en nuestro <strong>portal oficial y aplicación móvil</strong>.</li>
                 <li>Facilitar el <strong>pago en línea</strong> de los servicios de agua potable.</li>
+                <li>
+                  Enviar <strong>notificaciones push</strong> a su dispositivo relacionadas con el
+                  servicio: recordatorios de fecha límite de pago, avisos sobre contratos con servicio
+                  suspendido y comunicados sobre el estado del servicio.
+                </li>
               </ul>
+              <p>
+                Las notificaciones push son <strong>opcionales</strong>: usted decide si autoriza su
+                recepción y puede desactivarlas en cualquier momento desde la configuración de su
+                dispositivo o cerrando sesión en la aplicación.
+              </p>
               <p>
                 Una vez ingresados sus datos, será redirigido a la plataforma de pagos del banco{" "}
                 <strong>BBVA</strong>, el cual es responsable de los datos que usted ingrese en su
-                sistema. Puede consultar el aviso de privacidad del banco en:{" "}
+                sistema. Puede consultar el aviso de privacidad del banco{" "}
                 <a
                   href="https://www.bbva.mx/personas/aviso-de-privacidad.html#bbva"
                   target="_blank"
                   rel="noreferrer"
                   className={linkCls}
                 >
-                  Aviso de privacidad BBVA
+                  aquí
                 </a>
                 .
               </p>
@@ -90,6 +100,10 @@ export default function AvisoDePrivacidadPage() {
                 <li>Dirección.</li>
                 <li>Número de cuenta o referencia del servicio.</li>
                 <li>Datos de contacto (correo electrónico, teléfono).</li>
+                <li>
+                  Identificador (token) de notificaciones de su dispositivo y plataforma (Android o
+                  iOS), únicamente cuando autoriza recibir notificaciones.
+                </li>
               </ul>
             </Seccion>
 
@@ -108,6 +122,16 @@ export default function AvisoDePrivacidadPage() {
               <p>No se realizarán transferencias de sus datos personales, excepto:</p>
               <ul className={listCls}>
                 <li>Cuando sea necesario para procesar su pago a través del banco.</li>
+                <li>
+                  Para el envío de notificaciones push utilizamos el servicio{" "}
+                  <strong>Firebase Cloud Messaging</strong> de Google, que recibe el identificador
+                  (token) de su dispositivo con el único fin de entregar los avisos. Consulte la política
+                  de privacidad de Google{" "}
+                  <a href="https://policies.google.com/privacy" target="_blank" rel="noreferrer" className={linkCls}>
+                    aquí
+                  </a>
+                  .
+                </li>
               </ul>
             </Seccion>
 

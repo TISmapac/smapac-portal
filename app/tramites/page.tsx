@@ -41,7 +41,7 @@ const areas = [
           {
             titulo: "Establecimiento de condiciones del contrato",
             texto:
-              "El costo del trámite depende de las condiciones del predio: ubicación, uso de suelo, tamaño y otros factores.",
+              "El costo del trámite depende de la factibildiad y presupuesto.",
           },
         ],
         documentos: docsComunes,
@@ -172,11 +172,11 @@ export default function TramitesPage() {
                       </ul>
                     </div>
                   ))}
-                  {!a.completa && (
+                  {/* {!a.completa && (
                     <p className="text-sm text-gray-400 italic pt-2 border-t border-gray-100">
                       Próximamente se agregarán más trámites de esta área.
                     </p>
-                  )}
+                  )} */}
                 </CardContent>
               </Card>
             ))}

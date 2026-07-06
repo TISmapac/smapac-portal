@@ -34,7 +34,7 @@ export default function PagoPage() {
                   de manera rápida y sencilla.
                 </p>
                 <div className="rounded-lg overflow-hidden border border-gray-100 mb-6 bg-gray-50">
-                  <img src="/img/pago/app-recibo.webp" alt="Aplicación móvil SMAPAC" className="w-full" />
+                  <img src="/img/pago/banner_app.webp" alt="Aplicación móvil SMAPAC" className="w-full" />
                 </div>
                 <div className="mt-auto flex flex-col sm:flex-row gap-3">
                   <a

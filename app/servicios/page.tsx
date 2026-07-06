@@ -9,12 +9,12 @@ import PageHero from "@/components/page-hero"
 const pasosContratoBase = {
   titulo: "Número de contrato",
   texto:
-    "En la ventanilla de atención a usuarios proporciona tu número de contrato para su verificación. Para acceder al servicio, tu contrato debe estar al corriente o no exceder un adeudo de más de un mes.",
+    "En la ventanilla de atención a usuarios proporciona tu número de contrato para su verificación. Para acceder al servicio, tu contrato debe estar al corriente o no exceder un adeudo de más de quince días.",
 }
 const pasoReferenciasBase = {
   titulo: "Referencias",
   texto:
-    "Indica una referencia de ubicación (como el color de la casa) y un número de teléfono. El horario del servicio dependerá de la cantidad de solicitudes que se tengan en ese momento.",
+    "Indica una referencia de ubicación (como el color de la casa) y un número de teléfono. El servicio puede tener un tiempo de espera de al menos 48 horas.",
 }
 
 const servicios = [
