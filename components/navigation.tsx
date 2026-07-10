@@ -20,6 +20,7 @@ export default function Navigation() {
   const pathname = usePathname()
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname === href || pathname.startsWith(href + "/")
+  const pagoActive = isActive("/pago")
 
   return (
     <header className="sticky top-0 z-50">
@@ -61,8 +62,14 @@ export default function Navigation() {
 
             {/* CTA Pago en línea (guinda) */}
             <div className="hidden md:flex items-center">
-              <Link href="/pago">
-                <Button className="bg-guinda-600 hover:bg-guinda-700 text-white font-semibold">
+              <Link href="/pago" aria-current={pagoActive ? "page" : undefined}>
+                <Button
+                  className={`font-semibold text-white ${
+                    pagoActive
+                      ? "bg-guinda-700 hover:bg-guinda-700 ring-2 ring-guinda-600 ring-offset-2"
+                      : "bg-guinda-600 hover:bg-guinda-700"
+                  }`}
+                >
                   <CreditCard className="mr-2 h-4 w-4" />
                   Pago en línea
                 </Button>
@@ -99,8 +106,19 @@ export default function Navigation() {
                     </Link>
                   )
                 })}
-                <Link href="/pago" onClick={() => setIsMenuOpen(false)} className="block px-3 pt-2">
-                  <Button className="w-full bg-guinda-600 hover:bg-guinda-700 text-white">
+                <Link
+                  href="/pago"
+                  onClick={() => setIsMenuOpen(false)}
+                  aria-current={pagoActive ? "page" : undefined}
+                  className="block px-3 pt-2"
+                >
+                  <Button
+                    className={`w-full text-white ${
+                      pagoActive
+                        ? "bg-guinda-700 hover:bg-guinda-700 ring-2 ring-guinda-600 ring-offset-2"
+                        : "bg-guinda-600 hover:bg-guinda-700"
+                    }`}
+                  >
                     <CreditCard className="mr-2 h-4 w-4" />
                     Pago en línea
                   </Button>

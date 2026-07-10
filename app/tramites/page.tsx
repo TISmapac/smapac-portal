@@ -10,6 +10,8 @@ import {
   Building2,
   Phone,
   MapPin,
+  Info,
+  Wallet,
 } from "lucide-react"
 import Navigation from "@/components/navigation"
 import Footer from "@/components/footer"
@@ -19,6 +21,38 @@ const docsComunes = [
   "Original y copia de las escrituras",
   "Original y copia del pago predial del año en curso (2026)",
   "Original y copia de identificación oficial (INE)",
+]
+
+const reqCambioPropietario = [
+  "Original y copia de las escrituras",
+  "Original y copia del pago predial del año en curso (2026)",
+  "Anexar cédula catastral (en caso de haber actualizado el nombre en el predial)",
+  "Original y copia de identificación oficial (INE)",
+  "Original y copia del recibo de agua actual pagado",
+  "En caso de no ser propietario, traer poder notarial específico con vigencia menor a 6 meses",
+  "Toda la documentación debe estar a nombre del propietario actual",
+]
+
+const reqBajaTemporal = [
+  "Copia del último recibo pagado",
+  "Copia del predial actualizado",
+  "Copia de la credencial del INE",
+  "Copia del acuse de recibo",
+  "Todos los documentos deben ser del propietario",
+  "Anexar fotografías del predio y fotografía de la toma (para realizar la verificación)",
+]
+
+// La constancia de no adeudo pide los mismos requisitos, pero sin las fotografías.
+const reqConstancia = reqBajaTemporal.slice(0, -1)
+
+const notaAcuse =
+  "La «copia del acuse de recibo» corresponde al acuse de pago del trámite."
+
+const reqRoboMedidor = [
+  "Copia del recibo de agua",
+  "Copia de la credencial del INE del propietario del contrato",
+  "Copia de la credencial del INE de 2 testigos",
+  "Copia del documento para acuse de recibo",
 ]
 
 const areas = [
@@ -35,7 +69,7 @@ const areas = [
               "Llena el formato de factibilidad y anexa fotos del frente del predio para realizar la verificación de la ubicación del servicio.",
             pdf: {
               label: "Descargar Formato de factibilidad",
-              url: "https://smapac.gob.mx/assets/Formatos/FORMATO_DE_FACTIBILIDAD_2025.pdf",
+              url: "https://smapac.gob.mx/assets/Formatos/FORMATO_FACTIBILIDAD_2026.pdf",
             },
           },
           {
@@ -48,7 +82,21 @@ const areas = [
       },
       {
         nombre: "Cambio de propietario",
-        documentos: docsComunes,
+        pasos: [
+          {
+            titulo: "Fotografías del predio",
+            texto:
+              "Trae fotos impresas del frente del predio para generar una orden de verificación del lugar.",
+          },
+        ],
+        documentos: reqCambioPropietario,
+        nota: "Las copias de los documentos deben ser tamaño carta.",
+        costos: [
+          { concepto: "Doméstica", monto: "$232.00" },
+          { concepto: "Residencial", monto: "$300.00" },
+          { concepto: "Comercial", monto: "$600.00" },
+          { concepto: "Industrial", monto: "$1,000.00" },
+        ],
       },
     ],
   },
@@ -57,10 +105,75 @@ const areas = [
     icon: Users,
     completa: true,
     tramites: [
-      { nombre: "Baja Temporal", documentos: docsComunes },
-      { nombre: "Reconexión por baja temporal", documentos: docsComunes },
-      { nombre: "Constancia de no adeudo", documentos: docsComunes },
-      { nombre: "Robo de medidor", documentos: docsComunes },
+      {
+        nombre: "Baja Temporal",
+        pasos: [
+          {
+            titulo: "Llenado de formato",
+            texto:
+              "Llena el formato de baja temporal y preséntalo junto con los documentos en los módulos de atención.",
+            pdf: {
+              label: "Descargar Formato de baja temporal",
+              url: "https://smapac.gob.mx/assets/Formatos/FORMATO_BAJA_TEMPORAL_2026.pdf",
+            },
+          },
+        ],
+        documentos: reqBajaTemporal,
+        nota: notaAcuse,
+        costos: [
+          { concepto: "Doméstica", monto: "$1,500.00" },
+          { concepto: "Residencial", monto: "$1,500.00" },
+          { concepto: "Comercial", monto: "$3,500.00" },
+          { concepto: "Industrial", monto: "$3,500.00" },
+        ],
+      },
+      {
+        nombre: "Reconexión por baja temporal",
+        pasos: [
+          {
+            titulo: "Llenado de formato",
+            texto:
+              "Llena el formato de reconexión por baja temporal y preséntalo junto con los documentos en los módulos de atención.",
+            pdf: {
+              label: "Descargar Formato de reconexión",
+              url: "https://smapac.gob.mx/assets/Formatos/FORMATO_RECONEXION_BAJA_TEMPORAL_2026.pdf",
+            },
+          },
+        ],
+        documentos: reqBajaTemporal,
+        nota: notaAcuse,
+        costos: [
+          { concepto: "Doméstica", monto: "$928.00" },
+          { concepto: "Residencial", monto: "$928.00" },
+          { concepto: "Comercial", monto: "$1,229.60" },
+          { concepto: "Industrial", monto: "$1,693.60" },
+        ],
+      },
+      {
+        nombre: "Constancia de no adeudo",
+        documentos: reqConstancia,
+        nota: notaAcuse,
+        costos: [
+          { concepto: "Doméstica", monto: "$232.00" },
+          { concepto: "Residencial", monto: "$300.00" },
+          { concepto: "Comercial", monto: "$1,000.00" },
+        ],
+      },
+      {
+        nombre: "Robo de medidor",
+        pasos: [
+          {
+            titulo: "Llenado de formato",
+            texto:
+              "Llena el formato de robo de medidor y preséntalo junto con los documentos en los módulos de atención.",
+            pdf: {
+              label: "Descargar Formato de robo de medidor",
+              url: "https://smapac.gob.mx/assets/Formatos/ROBO_DE_MEDIDOR_2026.pdf",
+            },
+          },
+        ],
+        documentos: reqRoboMedidor,
+      },
     ],
   },
 ]
@@ -120,14 +233,14 @@ export default function TramitesPage() {
           </div>
 
           {/* Áreas y trámites */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+          <div className="space-y-8">
             {areas.map((a) => (
               <Card key={a.area} className="border-0 shadow-lg overflow-hidden">
                 <div className="flex items-center gap-3 bg-cyan-600 px-6 py-4">
                   <a.icon className="h-6 w-6 text-white" />
                   <h2 className="font-serif font-bold text-xl text-white">{a.area}</h2>
                 </div>
-                <CardContent className="pt-6 space-y-8">
+                <CardContent className="pt-6 grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 items-start">
                   {a.tramites.map((t) => (
                     <div key={t.nombre}>
                       <h3 className="font-serif font-bold text-lg text-cyan-700 mb-4 pb-2 border-b border-gray-100">
@@ -144,7 +257,7 @@ export default function TramitesPage() {
                               <div>
                                 <p className="font-semibold text-gray-900">{p.titulo}</p>
                                 <p className="text-gray-600 text-sm mt-0.5">{p.texto}</p>
-                                {p.pdf && (
+                                {"pdf" in p && p.pdf && (
                                   <a href={p.pdf.url} target="_blank" rel="noreferrer">
                                     <Button
                                       size="sm"
@@ -170,6 +283,33 @@ export default function TramitesPage() {
                           </li>
                         ))}
                       </ul>
+
+                      {"nota" in t && t.nota && (
+                        <p className="mt-3 flex items-start gap-1.5 text-sm text-gray-500 italic">
+                          <Info className="h-4 w-4 flex-shrink-0 mt-0.5 text-gray-400" />
+                          <span>{t.nota}</span>
+                        </p>
+                      )}
+
+                      {"costos" in t && t.costos && (
+                        <div className="mt-4 rounded-lg border border-amber-100 bg-amber-50 p-4">
+                          <p className="mb-2 flex items-center gap-1.5 text-sm font-semibold text-gray-700">
+                            <Wallet className="h-4 w-4 text-guinda-600" />
+                            Costos del trámite
+                          </p>
+                          <ul className="space-y-1">
+                            {t.costos.map((c) => (
+                              <li
+                                key={c.concepto}
+                                className="flex items-center justify-between gap-4 text-sm"
+                              >
+                                <span className="text-gray-600">{c.concepto}</span>
+                                <span className="font-semibold text-guinda-700">{c.monto}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                      )}
                     </div>
                   ))}
                   {/* {!a.completa && (
