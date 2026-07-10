@@ -98,8 +98,7 @@ export default function AvisoDePrivacidadPage() {
               <ul className={listCls}>
                 <li>Nombre completo.</li>
                 <li>Dirección.</li>
-                <li>Número de cuenta o referencia del servicio.</li>
-                <li>Datos de contacto (correo electrónico, teléfono).</li>
+                <li>Datos de contacto (correo electrónico).</li>
                 <li>
                   Identificador (token) de notificaciones de su dispositivo y plataforma (Android o
                   iOS), únicamente cuando autoriza recibir notificaciones.
