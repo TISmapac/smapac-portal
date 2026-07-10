@@ -1,0 +1,56 @@
+# ============================================================================
+# SMAPAC — smapac.gob.mx
+# Portal estático (Next.js export) en la raíz + apps en subcarpetas
+# (pagaturecibo/, intranet/), servidos por Apache en DonWeb/Ferozo.
+#
+# Este archivo vive en public/.htaccess del repo: el build lo copia a out/
+# y se sube a la raíz de public_html junto con el resto del sitio.
+# ============================================================================
+
+# Página de error 404 generada por Next
+ErrorDocument 404 /404.html
+
+# No listar el contenido de carpetas sin index
+# (si el hosting devolviera "500 Internal Server Error", eliminar esta línea)
+Options -Indexes
+
+# Codificación por defecto
+AddDefaultCharset utf-8
+
+# ----------------------------------------------------------------------------
+# Cache
+# ----------------------------------------------------------------------------
+<IfModule mod_headers.c>
+  # Los bundles de Next (/_next/) llevan hash en el nombre: cache de 1 año
+  <If "%{REQUEST_URI} =~ m#^/_next/#">
+    Header set Cache-Control "public, max-age=31536000, immutable"
+  </If>
+
+  # El HTML siempre se revalida (su nombre no cambia entre despliegues).
+  # Aplica también al index.html de pagaturecibo/ e intranet/, lo cual les
+  # conviene: sus bundles Angular también llevan hash.
+  <FilesMatch "\.html$">
+    Header set Cache-Control "no-cache"
+  </FilesMatch>
+</IfModule>
+
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType image/webp    "access plus 1 month"
+  ExpiresByType image/png     "access plus 1 month"
+  ExpiresByType image/jpeg    "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon  "access plus 1 month"
+  ExpiresByType font/woff2    "access plus 1 year"
+</IfModule>
+
+# ----------------------------------------------------------------------------
+# Compresión
+# ----------------------------------------------------------------------------
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/css application/javascript application/json image/svg+xml
+</IfModule>
+
+# NOTA: no se fuerza HTTPS aquí porque el dominio está detrás de Cloudflare;
+# la redirección http→https se configura en Cloudflare (hacerlo en ambos
+# lados puede provocar bucles de redirección).
