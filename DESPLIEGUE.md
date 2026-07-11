@@ -50,9 +50,9 @@ Antes de borrar nada: en el administrador de archivos de Ferozo, **comprimir
 **BORRAR (los archivos del sitio viejo en la raíz):**
 
 - El `index.html`/`index.php` anterior y sus carpetas propias de css/js/imágenes.
-- El `.htaccess` viejo de la raíz, si existe (lo reemplaza el nuevo). Revisa antes
-  su contenido por si tuviera reglas ajenas al sitio (redirecciones de correo,
-  bloqueos, etc.) que haya que preservar.
+- El `.htaccess` viejo de la raíz (lo reemplaza el nuevo, que **ya incorpora** sus
+  reglas: HTTPS condicionado a Cloudflare y el 301 de `/smapac2/Directorio.html`).
+- El `mantenimiento.html` viejo (el build trae uno nuevo institucional).
 
 ## 4. Subida (contenido de `out/`, no la carpeta)
 
@@ -94,6 +94,18 @@ prueba quitando la línea `Options -Indexes` (algunos hostings no permiten
    de vez en cuando conviene **borrar `_next/` del servidor antes de subir** la
    versión nueva (borrar solo `_next/`, nada más).
 3. Purgar caché de Cloudflare.
+
+## Modo mantenimiento
+
+El `.htaccess` trae un bloque **MODO MANTENIMIENTO** comentado. Para activarlo,
+descomenta sus 3 líneas (directo en el servidor con el editor de Ferozo):
+
+- Redirige todo el sitio a `/mantenimiento.html` (página institucional incluida
+  en el build, autocontenida) **excepto** para la IP de oficina de la regla —
+  ajústala si cambia.
+- Ojo: según el `.htaccess` propio de cada app, puede cubrir también
+  `pagaturecibo/` e `intranet/`.
+- Al terminar, vuelve a comentar las 3 líneas.
 
 ## Staging en Netlify
 

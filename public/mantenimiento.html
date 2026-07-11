@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex" />
+  <title>Sitio en mantenimiento — SMAPAC</title>
+  <!--
+    Página de mantenimiento autocontenida (sin imágenes ni CSS externos):
+    mientras el modo mantenimiento está activo, el .htaccess redirige TODAS
+    las rutas aquí, incluidos los assets, así que nada externo cargaría.
+    Se activa descomentando el bloque MODO MANTENIMIENTO del .htaccess.
+  -->
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: Georgia, "Times New Roman", serif;
+      background: linear-gradient(160deg, #004a99 0%, #003a77 60%, #002b58 100%);
+      color: #fff;
+      padding: 24px;
+    }
+    .tarjeta {
+      max-width: 560px;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(192, 160, 98, 0.45);
+      border-radius: 16px;
+      padding: 48px 36px;
+    }
+    .gota { font-size: 56px; line-height: 1; }
+    h1 {
+      margin: 20px 0 6px;
+      font-size: 26px;
+      letter-spacing: 0.3px;
+    }
+    .dorado { color: #c0a062; }
+    p { font-family: Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.6; color: #dbe7f5; }
+    .aviso { margin-top: 14px; }
+    .contacto {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 13.5px;
+      color: #b9cde6;
+    }
+    .contacto strong { color: #fff; font-weight: 600; }
+  </style>
+</head>
+<body>
+  <main class="tarjeta">
+    <div class="gota" aria-hidden="true">💧</div>
+    <h1>Sitio en <span class="dorado">mantenimiento</span></h1>
+    <p class="aviso">
+      Estamos realizando mejoras en el portal del Sistema Municipal de Agua
+      Potable y Alcantarillado de Carmen. Vuelve a intentarlo en unos minutos.
+    </p>
+    <p class="contacto">
+      Levantamiento de reportes: <strong>(938)&nbsp;382-3001</strong> y
+      <strong>(938)&nbsp;382-3063</strong><br />
+      Tomas tapadas, apoyo de agua en pipa y días de bombeo:
+      <strong>(938)&nbsp;382-5936</strong>
+    </p>
+  </main>
+</body>
+</html>
