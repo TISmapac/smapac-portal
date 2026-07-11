@@ -1,0 +1,10 @@
+# SMAPAC — smapac.gob.mx
+User-agent: *
+Allow: /
+
+# Sistemas internos fuera de los buscadores
+Disallow: /intranet/
+Disallow: /cgi-bin/
+Disallow: /mantenimiento.html
+
+Sitemap: https://www.smapac.gob.mx/sitemap.xml

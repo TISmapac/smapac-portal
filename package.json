@@ -5,6 +5,7 @@
   "main": "index.js",
     "scripts": {
     "build": "next build",
+    "postbuild": "node scripts/gen-sitemap.mjs",
     "dev": "next dev",
     "lint": "next lint",
     "start": "next start"
