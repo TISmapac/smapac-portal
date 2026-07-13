@@ -14,9 +14,9 @@ export default function HomePage() {
       {/* Hero con carrusel */}
       <HeroCarousel>
         <div className="max-w-3xl">
-          <p className="text-amber-300 font-semibold tracking-wide uppercase text-sm mb-4 drop-shadow">
+          {/* <p className="text-amber-300 font-semibold tracking-wide uppercase text-sm mb-4 drop-shadow">
             Sistema Municipal de Agua Potable y Alcantarillado de Carmen
-          </p>
+          </p> */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-black leading-tight mb-6 drop-shadow-md">
             Trabajamos para que no te falte el agua
           </h1>
@@ -25,13 +25,13 @@ export default function HomePage() {
             de Carmen, con compromiso y calidad para todas las familias.
           </p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Link href="/pago">
+            {/* <Link href="/pago">
               <Button size="lg" className="bg-guinda-600 hover:bg-guinda-700 text-white px-8 py-4 text-lg">
                 <CreditCard className="mr-2 h-5 w-5" />
                 Paga tu recibo en línea
               </Button>
-            </Link>
-            <Link href="/servicios">
+            </Link> */}
+            {/* <Link href="/servicios">
               <Button
                 size="lg"
                 variant="outline"
@@ -40,27 +40,73 @@ export default function HomePage() {
                 Conoce nuestros servicios
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-            </Link>
+            </Link> */}
           </div>
         </div>
       </HeroCarousel>
+
+ {/* Redes sociales / Facebook */}
+      <section className="py-20 bg-cyan-50/60">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+            <div>
+              <span className="inline-block bg-guinda-100 text-guinda-700 font-semibold text-sm px-3 py-1 rounded-full mb-5">
+                Comunidad SMAPAC
+              </span>
+              <h2 className="text-3xl md:text-4xl lg:text-5xl font-serif font-black text-gray-900 mb-6">
+                Conócenos en redes sociales
+              </h2>
+              <p className="text-lg text-gray-600 leading-relaxed mb-6">
+                Mantente informado sobre los últimos avances y noticias siguiendo la cuenta oficial
+                del Sistema Municipal de Agua Potable y Alcantarillado de Carmen en Facebook.
+                Publicamos avisos, cortes programados y novedades del día.
+              </p>
+              <a
+                href="https://www.facebook.com/profile.php?id=100063503659430"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white">
+                  Síguenos en Facebook
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </a>
+            </div>
+            <div className="flex justify-center lg:justify-end">
+              <iframe
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FSmapac-Carmen-100063503659430%2F%3Flocale%3Des_LA&tabs=timeline&width=500&height=640&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                className="rounded-xl shadow-lg border border-gray-200 bg-white"
+                width={500}
+                height={640}
+                style={{ border: "none", overflow: "hidden", maxWidth: "100%" }}
+                scrolling="no"
+                frameBorder={0}
+                allowFullScreen
+                title="Página de Facebook de SMAPAC Carmen"
+                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
 
       {/* ¿Qué es SMAPAC? */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
+            <div className="order-1 lg:order-2">
               <h2 className="text-3xl md:text-4xl font-serif font-black text-gray-900 mb-6">
                 ¿Qué es <span className="text-cyan-600">SMAPAC</span>?
               </h2>
               <p className="text-lg text-gray-600 leading-relaxed mb-4">
                 El Sistema Municipal de Agua Potable y Alcantarillado de Carmen (SMAPAC) es un
-                organismo descentralizado del H. Ayuntamiento de Carmen, Campeche, que se encarga de
+                organismo descentralizado que se encarga de
                 la prestación del servicio público de agua potable y alcantarillado en el municipio.
               </p>
               <div className="mt-6 h-1 w-24 bg-amber-500 rounded-full" />
             </div>
-            <div className="relative">
+            <div className="relative order-2 lg:order-1">
               <img
                 src="/img/que-es-smapac.webp"
                 alt="Servicios del SMAPAC"
@@ -72,7 +118,7 @@ export default function HomePage() {
       </section>
 
       {/* ¿Qué hacemos? */}
-      <section className="py-20 bg-cyan-50/60">
+      {/* <section className="py-20 bg-cyan-50/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="relative order-2 lg:order-1">
@@ -105,10 +151,10 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Servicios destacados */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-cyan-50/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
             <h2 className="text-3xl md:text-4xl font-serif font-black text-gray-900 mb-4">Nuestros servicios</h2>
@@ -160,7 +206,7 @@ export default function HomePage() {
       </section>
 
       {/* ¿Tienes problemas en tu servicio? */}
-      <section className="py-20 bg-cyan-50/60">
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -206,47 +252,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Redes sociales / Facebook */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div className="flex justify-center order-2 lg:order-1">
-              <iframe
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FSmapac-Carmen-100063503659430%2F%3Flocale%3Des_LA&tabs=timeline&width=500&height=640&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
-                className="rounded-xl shadow-lg border border-gray-200 bg-white"
-                width={500}
-                height={640}
-                style={{ border: "none", overflow: "hidden", maxWidth: "100%" }}
-                scrolling="no"
-                frameBorder={0}
-                allowFullScreen
-                title="Página de Facebook de SMAPAC Carmen"
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
-              />
-            </div>
-            <div className="order-1 lg:order-2">
-              <h2 className="text-3xl md:text-4xl font-serif font-black text-gray-900 mb-6">
-                Conócenos en redes sociales
-              </h2>
-              <p className="text-lg text-gray-600 leading-relaxed mb-6">
-                Mantente informado sobre los últimos avances y noticias siguiendo la cuenta oficial
-                del Sistema Municipal de Agua Potable y Alcantarillado de Carmen en Facebook.
-                Publicamos avisos, cortes programados y novedades del día.
-              </p>
-              <a
-                href="https://www.facebook.com/profile.php?id=100063503659430"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white">
-                  Síguenos en Facebook
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       <Footer />
     </div>

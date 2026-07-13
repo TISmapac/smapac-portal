@@ -30,12 +30,12 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-20">
             {/* Logos */}
             <Link href="/" className="flex items-center gap-3">
-              <img src="/brand/smapac.webp" alt="SMAPAC" className="h-11 w-auto" />
-              <span className="hidden lg:block h-10 w-px bg-gray-200" />
+              <img src="/brand/smapac.webp" alt="SMAPAC" className="h-[70px] w-auto" />
+              <span className="hidden lg:block h-12 w-px bg-gray-200" />
               <img
                 src="/brand/carmen.webp"
                 alt="Ayuntamiento de Carmen"
-                className="hidden lg:block h-11 w-auto"
+                className="hidden lg:block h-[70px] w-auto"
               />
             </Link>
 
