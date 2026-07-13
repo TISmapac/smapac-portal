@@ -6,22 +6,22 @@ const documentos = [
   {
     title:
       "Reglamento Interno de Organismo Operador Municipal denominado Sistema Municipal de Agua Potable y Alcantarillado de Carmen",
-    href: "https://www.smapac.gob.mx/transparencia/2026/JURIDICO%202026/REGLAMENTO%20INTERIOR%20%2019022026.pdf",
+    href: "https://www.smapac.gob.mx/transparencia-smapac/2026/JURIDICO%202026/REGLAMENTO%20INTERIOR%20%2019022026.pdf",
     meta: "PDF · 2026",
   },
   {
     title: "Manual de Organización y Procedimientos del SMAPAC",
-    href: "https://www.smapac.gob.mx/transparencia/2025/JURIDICO%202025/MANUALDEORGANIZACIONYPROCEDIMIENTOS.pdf",
+    href: "https://www.smapac.gob.mx/transparencia-smapac/2025/JURIDICO%202025/MANUALDEORGANIZACIONYPROCEDIMIENTOS.pdf",
     meta: "PDF · 2025",
   },
   {
     title: "Manual de Contabilidad Gubernamental Específico 2024",
-    href: "https://www.smapac.gob.mx/transparencia/2024/CONTABILIDAD/MANUAL%20DE%20CONTABILIDAD%20ESPECIFICO%202024_.pdf",
+    href: "https://www.smapac.gob.mx/transparencia-smapac/2024/CONTABILIDAD/MANUAL%20DE%20CONTABILIDAD%20ESPECIFICO%202024_.pdf",
     meta: "PDF · 2024",
   },
   {
     title: "Manual de Contabilidad Gubernamental Específico 2025",
-    href: "https://www.smapac.gob.mx/transparencia/2025/CONTABILIDAD%202025/Manual%20de%20Contabilidad%20Gubernamental%20Especifico%202025/MCGE2025.pdf",
+    href: "https://www.smapac.gob.mx/transparencia-smapac/2025/CONTABILIDAD%202025/Manual%20de%20Contabilidad%20Gubernamental%20Especifico%202025/MCGE2025.pdf",
     meta: "PDF · 2025",
   },
 ]

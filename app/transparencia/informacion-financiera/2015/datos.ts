@@ -73,7 +73,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%206.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%206.pdf"
           }
         ]
       },
@@ -109,7 +109,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%209.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%209.pdf"
           }
         ]
       }
@@ -186,7 +186,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%2015.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%2015.pdf"
           }
         ]
       },
@@ -198,7 +198,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%2016.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%2016.pdf"
           }
         ]
       },
@@ -210,7 +210,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%2017.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%2017.pdf"
           }
         ]
       }
@@ -239,7 +239,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%2019.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%2019.pdf"
           }
         ]
       },
@@ -251,7 +251,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%2020.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%2020.pdf"
           }
         ]
       }
@@ -280,7 +280,7 @@ export const categorias: Categoria[] = [
           {},
           {},
           {
-            "pdf": "https://www.smapac.gob.mx/transparencia/Contablidad2018/InfFinanciero2015/PDF%2022.pdf"
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/Contablidad2018/InfFinanciero2015/PDF%2022.pdf"
           }
         ]
       },

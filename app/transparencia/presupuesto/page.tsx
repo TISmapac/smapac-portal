@@ -2,7 +2,7 @@ import { FileText } from "lucide-react"
 import TransparenciaPage from "@/components/transparencia-page"
 import ContactoTransparencia from "@/components/contacto-transparencia"
 
-const T = "https://www.smapac.gob.mx/transparencia/"
+const T = "https://www.smapac.gob.mx/transparencia-smapac/"
 
 type Grupo = { titulo: string; anios: { anio: string; href: string }[] }
 

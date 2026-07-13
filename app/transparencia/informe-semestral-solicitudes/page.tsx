@@ -2,12 +2,12 @@ import TransparenciaPage from "@/components/transparencia-page"
 import ArchivoSemestral, { type Anio } from "@/components/archivo-semestral"
 import ContactoTransparencia from "@/components/contacto-transparencia"
 
-const SI = "https://www.smapac.gob.mx/transparencia/2024/TRANSPARENCIA-PORTALWEB/SI/"
+const SI = "https://www.smapac.gob.mx/transparencia-smapac/2024/TRANSPARENCIA-PORTALWEB/SI/"
 
 const anios: Anio[] = [
   {
     anio: "2025",
-    s1: "https://www.smapac.gob.mx/transparencia/2025/TRANSPARENCIA%202025/SI%202025/SI-2025-1.pdf",
+    s1: "https://www.smapac.gob.mx/transparencia-smapac/2025/TRANSPARENCIA%202025/SI%202025/SI-2025-1.pdf",
     s2: null,
   },
   { anio: "2024", s1: SI + "SI-2024-1.pdf", s2: SI + "SI-2024-2.pdf" },

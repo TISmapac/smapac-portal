@@ -11,6 +11,7 @@ En el mismo `public_html` conviven otras aplicaciones que **no se tocan**:
 | `pagaturecibo/` | Pago en línea (Angular, versión vieja) — el botón de `/pago/` del portal apunta aquí |
 | `intranet/` | Intranet (Angular 17, versión nueva) |
 | `transparencia-web/` | Archivo legado de transparencia — los PDFs enlazados desde las páginas internas del portal viven aquí |
+| `transparencia-smapac/` | PDFs de transparencia por año (antes `transparencia/`; se renombró porque esa ruta ahora es del portal — el .htaccess redirige los enlaces viejos con año) |
 | `assets/` | Contiene `Formatos/` con los PDF 2026 de trámites (factibilidad, baja temporal, reconexión, robo de medidor) |
 
 ---

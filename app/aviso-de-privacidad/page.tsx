@@ -186,7 +186,7 @@ export default function AvisoDePrivacidadPage() {
             <Seccion n={9} title="Aviso de Privacidad Integral">
               <p>Para mayor información, consulte el <strong>Aviso de Privacidad Integral</strong>:</p>
               <a
-                href="https://www.smapac.gob.mx/transparencia/2020/UT/AP/API%20Ingresos.pdf"
+                href="https://www.smapac.gob.mx/transparencia-smapac/2020/UT/AP/API%20Ingresos.pdf"
                 target="_blank"
                 rel="noreferrer"
                 className="inline-flex items-center gap-2 bg-guinda-600 hover:bg-guinda-700 text-white font-medium px-4 py-2 rounded-lg transition-colors"

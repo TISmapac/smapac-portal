@@ -5,12 +5,12 @@ import ContactoTransparencia from "@/components/contacto-transparencia"
 const documentos = [
   {
     title: "Tabla de aplicabilidad de obligaciones de transparencia comunes y específicas 2025",
-    href: "https://www.smapac.gob.mx/transparencia/2025/TRANSPARENCIA%202025/TA%202025/TA-2025.pdf",
+    href: "https://www.smapac.gob.mx/transparencia-smapac/2025/TRANSPARENCIA%202025/TA%202025/TA-2025.pdf",
     meta: "PDF · 2025",
   },
   {
     title: "Tabla de aplicabilidad de obligaciones de transparencia comunes 2025",
-    href: "https://www.smapac.gob.mx/transparencia/2025/TRANSPARENCIA%202025/TA%202025/TA-OC-2025.pdf",
+    href: "https://www.smapac.gob.mx/transparencia-smapac/2025/TRANSPARENCIA%202025/TA%202025/TA-OC-2025.pdf",
     meta: "PDF · 2025",
   },
 ]

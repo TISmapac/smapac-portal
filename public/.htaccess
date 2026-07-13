@@ -26,6 +26,11 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L,QSA]
 # Redirección heredada: enlace antiguo del directorio de transparencia
 RewriteRule ^smapac2/Directorio\.html$ /transparencia-web/directorio_smapac.html [R=301,L]
 
+# Los PDFs de transparencia se movieron de /transparencia/<año>/ a
+# /transparencia-smapac/<año>/ (la ruta /transparencia/ ahora es del portal).
+# Solo redirige rutas que empiezan con año, las páginas del portal no coinciden.
+RewriteRule ^transparencia/(\d{4}/.*)$ /transparencia-smapac/$1 [R=301,L]
+
 # ----------------------------------------------------------------------------
 # MODO MANTENIMIENTO (desactivado). Para activarlo, descomenta las 3 líneas.
 # Deja pasar solo a la IP de oficina (ajústala si cambia) y a la propia

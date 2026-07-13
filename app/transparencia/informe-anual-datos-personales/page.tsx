@@ -2,7 +2,7 @@ import TransparenciaPage from "@/components/transparencia-page"
 import DocCard from "@/components/doc-card"
 import ContactoTransparencia from "@/components/contacto-transparencia"
 
-const DP = "https://www.smapac.gob.mx/transparencia/2024/TRANSPARENCIA-PORTALWEB/DP/"
+const DP = "https://www.smapac.gob.mx/transparencia-smapac/2024/TRANSPARENCIA-PORTALWEB/DP/"
 
 const documentos = [
   { anio: "2024", href: DP + "DP-2024..pdf" },

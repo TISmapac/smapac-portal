@@ -2,8 +2,8 @@ import { FileText } from "lucide-react"
 import TransparenciaPage from "@/components/transparencia-page"
 import ContactoTransparencia from "@/components/contacto-transparencia"
 
-const BASE = "https://www.smapac.gob.mx/transparencia/2024/TRANSPARENCIA-PORTALWEB/AVISOS%20DE%20PRIVACIDAD%202024-2027/"
-const BASE2 = "https://www.smapac.gob.mx/transparencia/2024/TRANSPARENCIA-PORTALWEB/"
+const BASE = "https://www.smapac.gob.mx/transparencia-smapac/2024/TRANSPARENCIA-PORTALWEB/AVISOS%20DE%20PRIVACIDAD%202024-2027/"
+const BASE2 = "https://www.smapac.gob.mx/transparencia-smapac/2024/TRANSPARENCIA-PORTALWEB/"
 
 type Proceso = { nombre: string; simplificado: string; integral: string }
 type Dependencia = { nombre: string; procesos: Proceso[] }
