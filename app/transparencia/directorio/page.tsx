@@ -59,7 +59,7 @@ const directorio: Dependencia[] = [
         correo: "operativa@smapac.gob.mx",
       },
       {
-        nombre: "Ing. María Antonieta Díaz Zavala",
+        nombre: "Ing. Alfredo Gerardo Zamora Ovando",
         cargo: "Titular del Departamento Técnico",
         correo: "tecnica@smapac.gob.mx",
       },
