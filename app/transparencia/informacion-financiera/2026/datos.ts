@@ -12,7 +12,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/1_PDF1.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/1_PDF1.pdf"
+          },
           {},
           {}
         ]
@@ -24,7 +26,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/2_PDF2.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/2_PDF2.pdf"
+          },
           {},
           {}
         ]
@@ -36,7 +40,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/3_PDF3.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/3_PDF3.pdf"
+          },
           {},
           {}
         ]
@@ -48,7 +54,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/4_PDF4.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/4_PDF4.pdf"
+          },
           {},
           {}
         ]
@@ -60,7 +68,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/5_PDF5.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/5_PDF5.pdf"
+          },
           {},
           {}
         ]
@@ -72,7 +82,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/6_PDF6.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/6_PDF6.pdf"
+          },
           {},
           {}
         ]
@@ -84,7 +96,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/7_PDF7.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/7_PDF7.pdf"
+          },
           {},
           {}
         ]
@@ -96,7 +110,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/8_PDF8.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/8_PDF8.pdf"
+          },
           {},
           {}
         ]
@@ -108,7 +124,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/9_PDF9.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/9_PDF9.pdf"
+          },
           {},
           {}
         ]
@@ -125,7 +143,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/10_PDF10.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/10_PDF10.pdf"
+          },
           {},
           {}
         ]
@@ -137,7 +157,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/11_PDF11.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/11_PDF11.pdf"
+          },
           {},
           {}
         ]
@@ -149,7 +171,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/12_PDF12.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/12_PDF12.pdf"
+          },
           {},
           {}
         ]
@@ -161,7 +185,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/13_PDF13.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/13_PDF13.pdf"
+          },
           {},
           {}
         ]
@@ -173,7 +199,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/14_PDF14.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/14_PDF14.pdf"
+          },
           {},
           {}
         ]
@@ -185,7 +213,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/15_PDF15.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/15_PDF15.pdf"
+          },
           {},
           {}
         ]
@@ -197,7 +227,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/16_PDF16.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/16_PDF16.pdf"
+          },
           {},
           {}
         ]
@@ -209,7 +241,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/17_PDF17.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/17_PDF17.pdf"
+          },
           {},
           {}
         ]
@@ -226,7 +260,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/18_PDF18.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/18_PDF18.pdf"
+          },
           {},
           {}
         ]
@@ -238,7 +274,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/19_PDF19.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/19_PDF19.pdf"
+          },
           {},
           {}
         ]
@@ -250,7 +288,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/20_PDF20.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/20_PDF20.pdf"
+          },
           {},
           {}
         ]
@@ -265,7 +305,10 @@ export const categorias: Categoria[] = [
         "obligacion": "Inventario de los bienes muebles actualizado",
         "t": [
           {},
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/21_PDF21.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/21BIENES%20MUEBLES%202DO%20TRIM%202026.xlsx"
+          },
           {},
           {}
         ]
@@ -275,7 +318,10 @@ export const categorias: Categoria[] = [
         "obligacion": "Inventario de los bienes inmuebles actualizado",
         "t": [
           {},
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/22_PDF22.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/22BIENES%20INMUEBLES%202DO%20TRIM%202026.xlsx"
+          },
           {},
           {}
         ]
@@ -292,7 +338,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/23_PDF23.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/23_PDF23.pdf"
+          },
           {},
           {}
         ]
@@ -310,7 +358,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/24_ANEXO1.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F1_ESF_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/24_LDF1.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F1_ESF_3062026.xls"
+          },
           {},
           {}
         ]
@@ -323,7 +374,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/25_ANEXO2.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F2_IADPOP_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/25_LDF2.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F2_IADPOP_3062026.xls"
+          },
           {},
           {}
         ]
@@ -336,7 +390,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/26_ANEXO3.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F3_IAODF_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/26_LDF3.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F3_IAODF_3062026.xls"
+          },
           {},
           {}
         ]
@@ -349,7 +406,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/27_ANEXO4.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F4_BP_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/27_LDF4.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F4_BP_3062026.xls"
+          },
           {},
           {}
         ]
@@ -362,7 +422,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/28_LDF1.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F5_EAID_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/28_LDF5.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F5_EAID_3062026.xls"
+          },
           {},
           {}
         ]
@@ -375,7 +438,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/29_LDF2.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F6a_EAEPED_COG_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/29_LDF6A.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F6a_EAEPED_COG_3062026.xls"
+          },
           {},
           {}
         ]
@@ -388,7 +454,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/30_LDF3.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F6b_EAEPED_CA_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/30_LDF6B.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F6b_EAEPED_CA_3062026.xls"
+          },
           {},
           {}
         ]
@@ -401,7 +470,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/31_LDF4.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F6c_EAEPED_CF_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/31_LDF6C.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F6c_EAEPED_CF_3062026.xls"
+          },
           {},
           {}
         ]
@@ -414,7 +486,10 @@ export const categorias: Categoria[] = [
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/32_LDF5.pdf",
             "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/F6d_EAEPED_CSP_3132026.xls"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/32_LDF6D.pdf",
+            "xls": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/F6d_EAEPED_CSP_3062026.xls"
+          },
           {},
           {}
         ]
@@ -431,7 +506,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/33_LDF5.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/33_PDF24.pdf"
+          },
           {},
           {}
         ]
@@ -443,7 +520,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/34_LDF6.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/34_PDF25.pdf"
+          },
           {},
           {}
         ]
@@ -455,7 +534,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/35_LDF7.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/35_PDF26.pdf"
+          },
           {},
           {}
         ]
@@ -467,7 +548,9 @@ export const categorias: Categoria[] = [
           {
             "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/36_LDF8.pdf"
           },
-          {},
+          {
+            "pdf": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/36_PDF27.pdf"
+          },
           {},
           {}
         ]
@@ -489,7 +572,9 @@ export const categorias: Categoria[] = [
           {
             "zip": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/1INFORME2026/informe%20financiero%201er%20trim%2026.zip"
           },
-          {},
+          {
+            "zip": "https://www.smapac.gob.mx/transparencia-smapac/2026/CONTABILIDAD%202026/2INFORME2026/informe%20financiero%202do%20trim%202026.zip"
+          },
           {},
           {}
         ]
