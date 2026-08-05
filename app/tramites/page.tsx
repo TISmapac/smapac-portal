@@ -34,16 +34,20 @@ const reqCambioPropietario = [
 ]
 
 const reqBajaTemporal = [
-  "Copia del último recibo pagado",
-  "Copia del predial actualizado",
-  "Copia de la credencial del INE",
-  "Copia del acuse de recibo",
-  "Todos los documentos deben ser del propietario",
+  "Original y copia del predial actual (2026)",
+  "Original y copia de identificación (INE)",
+  "Original y copia del recibo actual pagado",
+  "Original y copia del acuse de recibo",
   "Anexar fotografías del predio y fotografía de la toma (para realizar la verificación)",
 ]
 
-// La constancia de no adeudo pide los mismos requisitos, pero sin las fotografías.
-const reqConstancia = reqBajaTemporal.slice(0, -1)
+// La constancia de no adeudo agrega las escrituras a los requisitos comunes
+const reqConstancia = ["Original y copia de las escrituras", ...reqBajaTemporal]
+
+// La variante sin contrato omite el recibo (no tienen contrato)
+const reqConstanciaSinContrato = reqConstancia.filter(
+  (r) => !r.includes("recibo actual pagado"),
+)
 
 const notaAcuse =
   "La «copia del acuse de recibo» corresponde al acuse de pago del trámite."
@@ -160,6 +164,12 @@ const areas = [
         ],
       },
       {
+        nombre: "Constancia de no adeudo (sin contrato)",
+        documentos: reqConstanciaSinContrato,
+        nota: notaAcuse,
+        costos: [{ concepto: "Costo único", monto: "$1,000.00" }],
+      },
+      {
         nombre: "Robo de medidor",
         pasos: [
           {
@@ -197,10 +207,11 @@ export default function TramitesPage() {
               <Building2 className="h-6 w-6 text-guinda-600 flex-shrink-0 mt-1" />
               <div>
                 <h2 className="font-serif font-bold text-lg text-gray-900 mb-2">
-                  Módulos autorizados para realizar trámites
+                  Oficina autorizada para realizar trámites
                 </h2>
                 <p className="text-gray-600 mb-4">
-                  Los trámites solo pueden realizarse de forma presencial en los siguientes módulos:
+                  Los siguientes trámites solo pueden realizarse en las oficinas centrales del
+                  SMAPAC:
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link
@@ -208,14 +219,7 @@ export default function TramitesPage() {
                     className="inline-flex items-center gap-2 bg-cyan-50 text-cyan-700 hover:bg-cyan-100 font-medium px-4 py-2 rounded-lg transition-colors"
                   >
                     <MapPin className="h-4 w-4" />
-                    Oficina Central de SMAPAC
-                  </Link>
-                  <Link
-                    href="/modulos"
-                    className="inline-flex items-center gap-2 bg-cyan-50 text-cyan-700 hover:bg-cyan-100 font-medium px-4 py-2 rounded-lg transition-colors"
-                  >
-                    <MapPin className="h-4 w-4" />
-                    Módulo del Mercado del Chechén
+                    Oficinas Centrales del SMAPAC
                   </Link>
                 </div>
               </div>
@@ -227,8 +231,8 @@ export default function TramitesPage() {
             <AlertCircle className="h-5 w-5 text-amber-600 flex-shrink-0 mt-0.5" />
             <p className="text-amber-900 text-sm">
               <span className="font-semibold">Importante:</span> los requisitos y procedimientos varían
-              según las situaciones particulares de cada caso. Para más información, acude a los módulos
-              de atención a usuarios del SMAPAC.
+              según las situaciones particulares de cada caso. Para más información, acude a las
+              oficinas centrales del SMAPAC.
             </p>
           </div>
 

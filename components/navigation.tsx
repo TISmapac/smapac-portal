@@ -29,15 +29,21 @@ export default function Navigation() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-20">
             {/* Logos */}
-            <Link href="/" className="flex items-center gap-3">
-              <img src="/brand/smapac.webp" alt="SMAPAC" className="h-[70px] w-auto" />
+            <div className="flex items-center gap-3">
+              <Link href="/">
+                <img src="/brand/smapac.webp" alt="SMAPAC" className="h-[70px] w-auto" />
+              </Link>
               <span className="hidden lg:block h-12 w-px bg-gray-200" />
-              <img
-                src="/brand/carmen.webp"
-                alt="Ayuntamiento de Carmen"
-                className="hidden lg:block h-[70px] w-auto"
-              />
-            </Link>
+              <a
+                href="http://www.carmen.gob.mx/"
+                target="_blank"
+                rel="noreferrer"
+                className="hidden lg:block"
+                aria-label="Sitio del H. Ayuntamiento de Carmen (se abre en otra pestaña)"
+              >
+                <img src="/brand/carmen.webp" alt="Ayuntamiento de Carmen" className="h-[70px] w-auto" />
+              </a>
+            </div>
 
             {/* Enlaces (escritorio) — resaltado dorado */}
             <div className="hidden md:flex items-baseline gap-1">
