@@ -55,7 +55,7 @@ const items: Item[] = [
     url: "https://www.plataformadetransparencia.org.mx/",
     external: true,
   },
-  { title: "Presupuesto de ingreso y egreso", icon: Coins, url: "/transparencia/presupuesto", internal: true },
+  { title: "Presupuesto de Ingresos y Egresos", icon: Coins, url: "/transparencia/presupuesto", internal: true },
   { title: "Marco normativo y reglamento interno", icon: Scale, url: "/transparencia/marco-normativo", internal: true },
   { title: "Directorio", icon: Contact, url: "/transparencia/directorio", internal: true },
 ]

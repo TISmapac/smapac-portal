@@ -1,10 +1,12 @@
-import { FileText } from "lucide-react"
+import Link from "next/link"
+import { FileText, FolderOpen } from "lucide-react"
 import TransparenciaPage from "@/components/transparencia-page"
 import ContactoTransparencia from "@/components/contacto-transparencia"
 
 const T = "https://www.smapac.gob.mx/transparencia-smapac/"
 
-type Grupo = { titulo: string; anios: { anio: string; href: string }[] }
+type Anio = { anio: string; href: string; interno?: boolean }
+type Grupo = { titulo: string; anios: Anio[] }
 
 const grupos: Grupo[] = [
   {
@@ -23,9 +25,13 @@ const grupos: Grupo[] = [
     anios: [
       { anio: "2022", href: T + "2022/CAF/PI/PI%202022.pdf" },
       { anio: "2024", href: T + "2024/CAF/PI2024.pdf" },
+      { anio: "2025", href: "/transparencia/presupuesto/ingresos-2025", interno: true },
     ],
   },
 ]
+
+const pillCls =
+  "inline-flex items-center gap-2 rounded-lg border border-guinda-200 bg-guinda-50 px-4 py-2.5 font-semibold text-guinda-700 transition-colors hover:bg-guinda-100"
 
 export default function PresupuestoPage() {
   return (
@@ -40,18 +46,19 @@ export default function PresupuestoPage() {
               <h2 className="font-serif font-bold text-white text-lg">{g.titulo}</h2>
             </div>
             <div className="flex flex-wrap gap-3 p-5">
-              {g.anios.map((a) => (
-                <a
-                  key={a.anio}
-                  href={a.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  className="inline-flex items-center gap-2 rounded-lg border border-guinda-200 bg-guinda-50 px-4 py-2.5 font-semibold text-guinda-700 transition-colors hover:bg-guinda-100"
-                >
-                  <FileText className="h-4 w-4" />
-                  {a.anio}
-                </a>
-              ))}
+              {g.anios.map((a) =>
+                a.interno ? (
+                  <Link key={a.anio} href={a.href} className={pillCls}>
+                    <FolderOpen className="h-4 w-4" />
+                    {a.anio}
+                  </Link>
+                ) : (
+                  <a key={a.anio} href={a.href} target="_blank" rel="noreferrer" className={pillCls}>
+                    <FileText className="h-4 w-4" />
+                    {a.anio}
+                  </a>
+                ),
+              )}
             </div>
           </div>
         ))}
