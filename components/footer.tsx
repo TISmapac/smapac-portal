@@ -26,7 +26,7 @@ export default function Footer() {
               descentralizado del H. Ayuntamiento de Carmen, Campeche.
             </p>
             <a
-              href="https://www.facebook.com/profile.php?id=100063503659430"
+              href="https://www.facebook.com/profile.php?id=61595404163578"
               target="_blank"
               rel="noreferrer"
               className="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-amber-400 hover:text-amber-300 transition-colors"

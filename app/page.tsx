@@ -45,8 +45,8 @@ export default function HomePage() {
         </div>
       </HeroCarousel>
 
- {/* Redes sociales / Facebook */}
-      <section className="py-20 bg-cyan-50/60">
+      {/* Redes sociales / Facebook — desactivada temporalmente, se habilitará después */}
+      {/* <section className="py-20 bg-cyan-50/60">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
@@ -62,7 +62,7 @@ export default function HomePage() {
                 Publicamos avisos, cortes programados y novedades del día.
               </p>
               <a
-                href="https://www.facebook.com/profile.php?id=100063503659430"
+                href="https://www.facebook.com/profile.php?id=61595404163578"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -74,7 +74,7 @@ export default function HomePage() {
             </div>
             <div className="flex justify-center lg:justify-end">
               <iframe
-                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fp%2FSmapac-Carmen-100063503659430%2F%3Flocale%3Des_LA&tabs=timeline&width=500&height=640&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
+                src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D61595404163578&locale=es_LA&tabs=timeline&width=500&height=640&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId"
                 className="rounded-xl shadow-lg border border-gray-200 bg-white"
                 width={500}
                 height={640}
@@ -88,7 +88,7 @@ export default function HomePage() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
 
       {/* ¿Qué es SMAPAC? */}
